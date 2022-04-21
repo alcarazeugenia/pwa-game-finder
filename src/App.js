@@ -7,11 +7,11 @@ const App = () => {
 	return (
 		<>
 			<Switch>
-				<PrivateRoute
+				{/* <PrivateRoute
 					path="/main"
 					component={() => <Main hidden={false} />}
-				/>
-				<Route exact path="/" component={LoginContainer} />
+				/> */}
+				<Route path="/" component={() => <Main hidden={false} />} />
 				<Route
 					path="*"
 					component={() => <h1>Error 404, page not found</h1>}
